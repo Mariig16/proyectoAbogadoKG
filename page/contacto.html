@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orienta&display=swap" rel="stylesheet">
+  <title>Abogada Karina González</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/03a735891b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="pageBanner">
+    <a href="../index.html">
+      <img src="../image/logo_Firma5.png" alt="Tarjeta Presentación" class="logo">
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html" class="menuhover">INICIO</a></li>
+        <li><a href="./nosotros.html" class="menuhover"> NOSOTROS</a></li>
+        <li><a href="./servicios.html" class="menuhover">SERVICIOS</a> </li>
+        <li><a href="./testimonios.html" class="menuhover">TESTIMONIOS</a> </li>
+        <li><a href="./contacto.html" class="menuhover"> CONTACTO</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pageContent">
+    <div class="contacto">
+      <img src="../image/banner_Contact2.png" alt="Banner contacto" class="banner_Contact">
+      <div class="info_Contact">
+        Bogotá, D.C<br>
+        Calle. 76 Bis A #94-10<br>
+        Teléfono: (+57) 301 000 0000<br>
+      </div>
+      <div class="box_Form">
+        <div class="datos_Form">
+          Registrar datos
+        </div>
+        <form class="form">
+          <div class="box_elementForm">
+              <label for="Nombres">Nombres:</label><br>
+              <input type="text" placeholder="Digite nombres" class="style_Form">
+          </div>
+          <div class="box_elementForm">
+              <label for="Apellidos">Apellidos:</label><br>
+              <input type="text" placeholder="Digite apellidos" class="style_Form">
+          </div>
+          <div class="box_elementForm">
+            <label for="emailContacto">Email:</label><br>
+            <input type="email" id="emailContacto" placeholder="Digite correo" class="style_Form">
+          </div>
+          <div class="box_elementForm">
+              <label for="tipo_Telefono">Tipo de teléfono:</label><br>
+            <input type="radio" id="tel_personal" name="lenguaje" value="Personal">
+            <label for="tel_personal">Personal</label>
+            <input type="radio" id="tel_corporativo" name="lenguaje" value="Corporativo">
+            <label for="tel_corporativo">Corporativo</label><br>
+          </div>
+          <div class="box_elementForm">
+              <label for="Telefono">Número de téfono(*):</label><br>
+              <input type="text" placeholder="Ingrese número de teléfono" class="style_Form">
+          </div>
+          <div class="box_elementForm">
+              <label for="consulta">Tipo de consulta:</label><br>
+              <select name="consulta" id="consulta">
+              <option value="">Seleccione</option>
+              <option value="servicio">Servicios</option>
+              <option value="otro">Otro</option>
+          </select>
+          </div>
+          <div class="box_elementForm">
+            <label for="Telefono">Motivo de la consulta(*):</label><br>
+            <textarea placeholder="Por favor escribir el mensaje en este espacio" class="style_Form" rows="30"></textarea><br>
+          </div>       
+          <div class="box_btn">
+            <input type="reset" value="Borrar" class="btn btn_reset">
+            <input type="submit" value="Enviar" class="btn btn_submit">
+          </div> 
+        </form>
+      </div>
+    </div>
+    <div class="box_FormContact">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.371537494479!2d-74.1107551859099!3d4.705354142928993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4cfa7859e5%3A0x9cd5991c0b3425ff!2sCl.%2076%20Bis%20A%20%2394-10%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1641873314243!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" style="border:0" class="maps"></iframe>
+    </div>
+  </main>
+  <footer class="pageFoot">
+    <span>SIGUENOS:</span>
+    <ul class="redes">
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fab fa-instagram-square fa-3x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footpage">
+      Copyright© 2022 - Asuntos Legales Karina González. All Rights Reserved. Bogotá - Colombia
+    </div>
+  </footer>
+</body>
+</html>
