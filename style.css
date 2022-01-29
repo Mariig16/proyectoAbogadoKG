@@ -18,8 +18,8 @@ body{
 /* header */
 .pageBanner{
   grid-area: arriba;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0.48503151260504207) 74%, rgba(133,4,184,1) 95%, rgba(121,6,191,1) 100%);
+  background: rgb(173,46,245);
+  background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
   width: 100%;
   height: 130px;
   position: fixed;
@@ -46,6 +46,7 @@ body{
   text-decoration: none;
   color: #520f70;
   font-weight: bold;
+  transition: all 3s;
 }
 .menuhover:hover{
   color: rgb(209, 135, 238);
@@ -54,10 +55,30 @@ body{
 }
 .logo{
   display: inline;
-  margin-left: 5px;
+  margin-left: 0px;
   align-self: auto;
   height: 90px;
   width: 270px;
+  /* transition: all 1s; */
+  animation: logoslide 1s 3s 2;
+}
+.logo:hover{
+  height: 95px;
+  width: 285;
+}
+@keyframes logoslide{
+  0%{
+    margin-left: 1%; 
+  }
+  30% {
+    margin-left: 5%;
+  }
+  60% {
+    margin-left: 10%;
+  }
+  100% {
+    margin-left: 15%;
+  }
 }
 /* Cuerpo */
 .pageContent{
@@ -69,8 +90,8 @@ body{
 /* Pié de página */
 .pageFoot{
   grid-area: abajo;
-  background: rgb(121,6,191);
-  background: linear-gradient(0deg, rgba(121,6,191,1) 0%, rgba(133,4,184,1) 5%, rgba(255,255,255,0.48503151260504207) 34%);
+  background: rgb(173,46,245);
+background: linear-gradient(0deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 16%, rgba(255,255,255,1) 38%);
   width: 100%;
   height: 70%;
   display: flex;
@@ -91,7 +112,9 @@ body{
   background: linear-gradient(rgb(153, 0, 255),rgb(187, 11, 158));
   -webkit-background-clip: text;
   color: transparent; 
+
 }
+
 .redes{
   list-style: none;
   display: flex;
@@ -122,7 +145,9 @@ i:hover{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+
 }
+
 
 /*INDEX*/
 .imgInicial{
@@ -140,12 +165,22 @@ i:hover{
   line-height: 30px;
   border-radius: 5%;
   padding: 1%;
+  transition: all 1s;
+}
+.textInitial:hover{
+  background-color: rgba(238, 215, 252, 0.986);
 }
 
 /*NOSOTROS*/
 .banner_Us, .banner_Services, .banner_Testi, .banner_Contact{
   width: 100%;
   margin-top: 130px;  
+}
+.boxUs{
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: auto;
+  z-index: 10;
 }
 .botonesUs{
   width: 300px;
@@ -154,10 +189,9 @@ i:hover{
   margin: 10px 8px;
   position: relative;
   padding-top: 50px;
-  background-color: red;
 }
 .boton1, .boton2, .boton3{
-  background-color: #0f1e70;
+  background-color: #520f70;
   width: 250px;
   font-size: 20px;
   border-radius: 50% 20% / 10% 40%;
@@ -165,7 +199,9 @@ i:hover{
   line-height: 40px;
   margin: 15%;
   color: rgb(255, 255, 255);
-  z-index: 10;
+}
+.btnUs{
+  transition: background-color 3s ease;
 }
 .btnUs:hover{
   background-color: rgb(230, 92, 230);
@@ -211,10 +247,13 @@ i:hover{
   display: inline-block;
   margin-top: 20px;
   margin-right: 5px;
+  transition: all 1s;
+
 }
 .img_Services{
   width: 289.5px;
   height: 362.1px;
+
 }
 .box1:hover{
   border: solid 2px #af01be;
@@ -236,6 +275,7 @@ i:hover{
   height: 300px;
   margin: 10px;
   scrollbar-color: rgba(247, 3, 255, 0.534) rgb(212, 0, 255);
+  transition: border 2s;
 }
 .usuario:hover{
   border: solid 2px #af01be;
@@ -273,9 +313,11 @@ i:hover{
   border: solid 1px rgb(218, 218, 218);
   width: 280px;
   height: 30px;
+  transition: background-color 2s;
 }
 .style_Form:focus{
   border-color:rgb(165, 73, 231);
+  background-color: rgb(165, 73, 231);
 }
 .box_elementForm{
   margin:1px;
@@ -296,11 +338,14 @@ i:hover{
   font-weight: bold;
   background-color:#520f70;
   border: 0ch;
+  transition: background-color 2s;
 }
 .box_btn{
   align-items: center;
   position: relative;
   margin-left: 50%;
+  transition: background-color 2s;
+ 
 }
 .btn:hover{
   background-color: rgb(230, 92, 230);
@@ -347,19 +392,25 @@ select{
 }
 .maps{
   display: flex;
-  width: 100%;
-  height:400px;
+  width: 450px;
+  height:350px;
   position: absolute;
   left: 10px;
+  transition: all 2s;
 }
-
+.maps:hover{
+  width: 100%;
+  height: 400px;
+  z-index: 1000;
+  -webkit-box-shadow: 5px 5px 15px 5px #A3009B; 
+  box-shadow: 5px 5px 15px 5px #A3009B;
+}
 /*Media Query*/
 @media only screen and (max-width:780px) {
   /*Banner - Pie de Página*/
 
   .pageFoot{
     align-self: flex-start;
-
   }
   .banner_Us, .banner_Services, .banner_Testi, .banner_Contact{
     width: 100%;
@@ -488,6 +539,4 @@ select{
     left: 0;
   }
 
-  
-  
 }
