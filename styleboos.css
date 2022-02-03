@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.textInitial{
+  background-color: rgba(209, 209, 209, 0.144);
+  border-radius: 5%;
+}
+.formulario{
+  width: 310px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3%;
+  padding: 15px;
+  border: 1px solid black;
+}
+.call{
+  bottom: 40px;
+  left: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 5px 8px 15px rgba(248, 2, 2, 0.1);
+	z-index: 1000;
+}

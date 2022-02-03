@@ -408,7 +408,6 @@ select{
 /*Media Query*/
 @media only screen and (max-width:780px) {
   /*Banner - Pie de Página*/
-
   .pageFoot{
     align-self: flex-start;
   }
@@ -538,5 +537,4 @@ select{
     top: 0;
     left: 0;
   }
-
 }
