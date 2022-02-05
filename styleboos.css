@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 .textInitial{
   background-color: rgba(209, 209, 209, 0.144);
   border-radius: 5%;
+
 }
 .formulario_Text{
   font-size: 24px;
@@ -15,22 +16,9 @@
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+
 }
 
-.formulario{
-  background-color: #24303c;
-  width: 400px;
-  padding: 30px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  box-shadow: 7px 13px 37px #000;
-  border: 1px solid black;
-  font-weight: bold;
-}
 .formulario_Style{
   width: 100%;
   background-color: #24303c;
@@ -40,7 +28,7 @@
   border: 1px solid #7a1fc5;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  
+
 }
 .formulario_Btn{
   width: 40%;
@@ -99,4 +87,31 @@
   font-size: 20px;
   font-weight: bold;
   transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+.opiniones_Carousel{
+  background-color: #24303c;
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.servicios_Btn{
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  background: linear-gradient(to left top, #6a00a7,#dee8f3);
+  border: none;
+  
+}
+.servicios_Btn:hover{
+  cursor:pointer;
+  transform: translateX(-3px);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  color: rgb(255, 255, 255);
+
 }
