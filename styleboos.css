@@ -5,7 +5,23 @@
   box-sizing: border-box;
   
 }
-
+.nav_Menu{
+  background: rgb(173,46,245);
+  background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
+  height: 200px;
+  border-bottom: 2px solid #520f70;
+}
+.navbar a{
+  text-decoration: none;
+  color: #520f70;
+  transition: all 3s;
+}
+.footer{
+  background: rgb(173,46,245);
+  background: linear-gradient(0deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 16%, rgba(255,255,255,1) 38%);
+  height: 150px;
+  border-top: 2px solid #520f70;
+}
 .textInitial{
   background-color: rgba(209, 209, 209, 0.144);
   border-radius: 5%;
@@ -130,108 +146,50 @@
   color: rgb(255, 255, 255);
   
 }
-.nosotros_Btn{
-  width: 40%;
-  height: 45px;
-  margin-top: 20px;
-  margin-left: 20px;
-  border-radius: 4px;
-  border:none;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  background: linear-gradient(to left top, #6a00a7,#dee8f3);
-  font-size: 20px;
-  font-weight: bold;
-  
-}
 
-/* .boton1, .boton2, .boton3{
-  background-color: #520f70;
-  width: 250px;
-  font-size: 20px;
-  border-radius: 50% 20% / 10% 40%;
-  text-align: center;
-  line-height: 40px;
-  margin: 15%;
-  color: rgb(255, 255, 255);
+/*Nosotros*/
+.nosotros{
+  background-color: #ffffff;
+  box-shadow: 7px 13px 37px #000;
+  margin-bottom: 30px;
+  width: 100%;
 }
-.btnUs{
-  transition: background-color 3s ease;
+.nosotros_Title{
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
 }
-.btnUs:hover{
-  background-color: rgb(230, 92, 230);
-  cursor: pointer;
+.nosotros_ceo{
+  width: 70%;
+}
+.img_ceo{
+  width: 200px;
+  height: 200px;
+  object-fit: none;
+  border-radius: 50%;
+}
+.ceo{
+  padding: 25px;
+}
+.ceo_foto{
+  margin: auto;
   
-} */
+}
+.ceo_info{
+  text-align: justify;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+}
 .infoUs_Uno{
-  background-color: rgb(243, 243, 243);
+  margin: auto;
   height: 380px;
   line-height: 30px;
   text-align: justify;
-  font-size: 20px;
   padding: 15px 15px 0px 15px;
-  top: 550px;
-  left: 320px;
-}
-.imagenUs{
-  width: 400px;
-  height: 400px;
-} 
-/* .boxUs{
-  background-color: rgb(255, 255, 255);
-  width: 20%;
-  height: auto;
-  z-index: 10;
-}
-.botonesUs{
-  width: 300px;
-  height: 400px;
-  display:inline-block;
-  margin: 10px 8px;
-  position: relative;
-  padding-top: 50px;
-}
-.boton1, .boton2, .boton3{
-  background-color: #520f70;
-  width: 250px;
-  font-size: 20px;
-  border-radius: 50% 20% / 10% 40%;
-  text-align: center;
-  line-height: 40px;
-  margin: 15%;
-  color: rgb(255, 255, 255);
-}
-.btnUs{
-  transition: background-color 3s ease;
-}
-.btnUs:hover{
-  background-color: rgb(230, 92, 230);
-  cursor: pointer;
-  
-}
-.infoUs_Uno{
-  background-color: rgb(243, 243, 243);
-  width: 550px;
-  height: 380px;
-  display:inline-block;
-  line-height: 30px;
-  text-align: justify;
-  font-size: 20px;
-  padding: 20px 20px 0px 20px;
-  top: 550px;
-  left: 320px;
-}
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
 
+} 
 .imagenUs{
   width: 400px;
   height: 400px;
-  top: 550px;
-  left: 925px;
-} 
-.infoUs_2{
-  vertical-align: middle;
 }
-.img_QuienesSomos{
-  width: 400px;
-  height: 400px;
-} */
