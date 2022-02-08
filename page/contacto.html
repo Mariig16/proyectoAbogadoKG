@@ -8,110 +8,102 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orienta&display=swap" rel="stylesheet">
   <title>Abogada Karina González</title>
- <!-- Font Awesome -->
- <script src="https://kit.fontawesome.com/03a735891b.js" crossorigin="anonymous"></script>
- <!-- Bootstrap -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- <!-- Css -->
- <link rel="stylesheet" href="./styleboos.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/03a735891b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Css -->
+  <link rel="stylesheet" href="../styleboos.css">
 </head>
 <body>
-  <header class="conteiner pageBanner">
-    <div>
-      <nav class="navbar navbar-expand-lg bg-primary bg-gradient navbar-dark ">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../image/logo_Firma4.png" alt="Logo Firma" class="col-lg-6"> 
-          </a>
-          <ul class="navbar-nav col-6 d-flex justify-content-evenly">
+  <header class="pageBanner">
+    <nav class="navbar navbar-expand-lg nav_Menu">
+      <div class="container row">
+        <div class="col-lg-4">
+          <a class="navbar-brand" href="../index.html"><img src="../image/logo_Firma5.png" alt="Logo Firma" width="250px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse col-lg-8 mx-auto " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-4">
             <li class="nav-item">
-              <a class="nav-link active" href="../index.html">Home</a>
+              <a class="nav-link active fs-4" aria-current="page" href="../index.html">Home</a>
             </li>
-           <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-4" href="./nosotros.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./page/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="#">Fundadora</a></li>
+                <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                <li><a class="dropdown-item" href="#">Misión</a></li>
+                <li><a class="dropdown-item" href="#">Visión</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipo de trabajo</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./servicios.html">Servicios</a>
+              <a class="nav-link fs-4" href="./servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./opiniones.html">Opiniones</a>
+              <a class="nav-link fs-4" href="./opiniones.html">Opiniones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+              <a class="nav-link fs-4" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   <main class="pageContent">
     <div class="container-fluid imgUS">
       <img src="../image/banner_Contact2.png" alt="Banner contacto" class="img-fluid banner_Contact">
     </div>
-    <div class="contacto">
-      <div class="info_Contact">
-        Bogotá, D.C<br>
-        Calle. 76 Bis A #94-10<br>
-        Teléfono: (+57) 301 000 0000<br>
+    <div class="formulario">
+      <h1 class="formulario_Text">Registre sus datos</h1>
+      <input type="text" class="formulario_Style" name="nombre" id="nombre" placeholder="Ingrese su nombre" >
+      <input type="text" class="formulario_Style" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+      <input type="email" class="formulario_Style" name="email" id="email" placeholder="Ingrese su email">
+      <!-- <label for="tipo_Telefono">Tipo de teléfono:</label>
+        <input type="radio" class="formulario_Style" name="lenguaje" id="tel_personal" value="Personal">
+        <label for="tel_personal" class="formulario_Text">Personal</label>
+        <input type="radio" class="formulario_Style" name="lenguaje" id="tel_corporativo" value="Corporativo">
+        <label for="tel_corporativo" class="formulario_Text">Corporativo</label> -->
+        <input type="text" class="formulario_Style" name="email" id="telefono" placeholder="Ingrese número de teléfono">
+        <select name="consulta" class="formulario_Style" name="consulta" id="consulta">
+          <option value="" class="formulario_Style">Seleccione tipo de consulta</option>
+          <option value="servicio" class="formulario_Style">Servicios</option>
+          <option value="otro" class="formulario_Style">Otro</option>
+        </select>
+        <input type="text" class="formulario_Style" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje">
+        <button class="formulario_Btn">Enviar</button>
+        <button class="formulario_Btn">Borrar</button>
+      </div> 
+    </div>
+    <!-- Offcanvas -->
+    <button class="btn mx-auto Btn_offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">¡¡Encuéntranos presioando aquí!!</button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Dirección</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="row w-50 formulario">
-        <div class="col-lg-6 box_Form">
-          <div class="datos_Form">
-            Registrar datos
-          </div>
-          <form class="form">
-            <div class="box_elementForm">
-                <label for="Nombres">Nombres:</label><br>
-                <input type="text" placeholder="Digite nombres" class="style_Form">
-            </div>
-            <div class="box_elementForm">
-                <label for="Apellidos">Apellidos:</label><br>
-                <input type="text" placeholder="Digite apellidos" class="style_Form">
-            </div>
-            <div class="box_elementForm">
-              <label for="emailContacto">Email:</label><br>
-              <input type="email" id="emailContacto" placeholder="Digite correo" class="style_Form">
-            </div>
-            <div class="box_elementForm">
-                <label for="tipo_Telefono">Tipo de teléfono:</label><br>
-              <input type="radio" id="tel_personal" name="lenguaje" value="Personal">
-              <label for="tel_personal">Personal</label>
-              <input type="radio" id="tel_corporativo" name="lenguaje" value="Corporativo">
-              <label for="tel_corporativo">Corporativo</label><br>
-            </div>
-            <div class="box_elementForm">
-                <label for="Telefono">Número de téfono(*):</label><br>
-                <input type="text" placeholder="Ingrese número de teléfono" class="style_Form">
-            </div>
-            <div class="box_elementForm">
-                <label for="consulta">Tipo de consulta:</label><br>
-                <select name="consulta" id="consulta">
-                <option value="">Seleccione</option>
-                <option value="servicio">Servicios</option>
-                <option value="otro">Otro</option>
-            </select>
-            </div>
-            <div class="box_elementForm">
-              <label for="Telefono">Motivo de la consulta(*):</label><br>
-              <textarea placeholder="Por favor escribir el mensaje en este espacio" class="style_Form" rows="30"></textarea><br>
-            </div>       
-            <div class="box_btn">
-              <input type="reset" value="Borrar" class="btn btn_reset">
-              <input type="submit" value="Enviar" class="btn btn_submit">
-            </div> 
-          </form>
-      </div>
-      <div class="col-lg-6 box_FormContact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.371537494479!2d-74.1107551859099!3d4.705354142928993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4cfa7859e5%3A0x9cd5991c0b3425ff!2sCl.%2076%20Bis%20A%20%2394-10%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1641873314243!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" style="border:0" class="img-fluid maps"></iframe>
+      <div class="offcanvas-body contacto">
+        <div class="contacto_Mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.371537494479!2d-74.1107551859099!3d4.705354142928993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4cfa7859e5%3A0x9cd5991c0b3425ff!2sCl.%2076%20Bis%20A%20%2394-10%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1641873314243!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" style="border:0" class="contacto_Imagen_Mapa"></iframe>
+        </div>
+        <div class="contacto_Info">
+          Bogotá, D.C<br>
+          Calle. 76 Bis A #94-10<br>
+          Teléfono: (+57) 301 000 0000
+        </div>
       </div>
     </div>
-    <a href="tel:600123456" target="_blank"><i class="fas fa-phone-square-alt fa-5x fixed-bottom"></i></a>
   </main>
-  <footer class="container-fluid text-center text-white bg-primary bg-gradient">
+  <footer class="container-fluid text-center text-white footer">
     <div class="row">
-      <div class="text-center text-dark pt-1">
-        Copyright© 2022 - Asuntos Legales Karina González. All Rights Reserved. Bogotá - Colombia
-      </div>
       <div class="pt-1 mb-1">
         <a class="btn btn-link btn-lg text-dark btn-floating" href="#!">
           <i class="fab fa-facebook-square fa-2x"></i>
@@ -123,7 +115,12 @@
           <i class="fab fa-instagram-square fa-2x"></i>
         </a>
       </div>
+      <div class="text-center text-dark pt-5">
+        Copyright© 2022 - Asuntos Legales Karina González. All Rights Reserved. Bogotá - Colombia
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

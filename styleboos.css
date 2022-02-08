@@ -1,23 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  
+}
+.nav_Menu{
+  background: rgb(173,46,245);
+  background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
+  height: 200px;
+  border-bottom: 2px solid #520f70;
+}
+.navbar a{
+  text-decoration: none;
+  color: #520f70;
+  transition: all 3s;
+}
+.footer{
+  background: rgb(173,46,245);
+  background: linear-gradient(0deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 16%, rgba(255,255,255,1) 38%);
+  height: 150px;
+  border-top: 2px solid #520f70;
 }
 .textInitial{
   background-color: rgba(209, 209, 209, 0.144);
   border-radius: 5%;
+  
 }
 .formulario{
-  width: 310px;
+  background-color: #24303c;
+  width: 400px;
+  padding: 30px;
   margin: auto;
-  background-color: white;
-  border-radius: 3%;
-  padding: 15px;
-  border: 1px solid black;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
 }
-.call{
-  bottom: 40px;
-  left: 40px;
-  transition: all 300ms ease 0ms;
-  box-shadow: 5px 8px 15px rgba(248, 2, 2, 0.1);
-	z-index: 1000;
+.formulario_Text{
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+
+.formulario_Style{
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #7a1fc5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  
+}
+.formulario_Btn{
+  width: 40%;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border:none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background: linear-gradient(to left top, #6a00a7,#dee8f3);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.formulario_Btn:hover{
+  cursor:pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  color: rgb(255, 255, 255);
+}
+.formulario_Btn:active{
+  transform:translateY(3px);
+  background: linear-gradient(to left top,#dee8f3, #6a00a7);
+}
+
+.formulario_Style:focus{
+  height: 60px;
+  background-color: #32243cc5;
+} 
+.contacto_Mapa{
+  width: 350px;
+  height:400px;
+  background-color: #000;
+}
+.contacto_Imagen_Mapa{
+  width: 100%;
+  height: 400px;
+}
+.contacto_Info{
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.Btn_offcanvas{
+  width: 100%;
+  height: 45px;
+  margin-top: 0;
+  margin-left: 20px;
+  border-radius: 4px;
+  border:none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background: linear-gradient(to left top, #24303c,#dee8f3);
+  font-size: 20px;
+  font-weight: bold;
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+.opiniones_Carousel{
+  background-color: #24303c;
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.opiniones_Carousel .opiniones_Carousel_Tarjetas .opiones_Tarjetas .img-cuadro img{
+  border-radius: 50%;
+}
+.servicios_Btn{
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  background: linear-gradient(to left top, #6a00a7,#dee8f3);
+  border: none;
+  
+}
+.servicios_Btn:hover{
+  cursor:pointer;
+  transform: translateX(-3px);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+  color: rgb(255, 255, 255);
+  
+}
+
+/*Nosotros*/
+.nosotros{
+  background-color: #ffffff;
+  box-shadow: 7px 13px 37px #000;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.nosotros_Title{
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
+}
+.nosotros_ceo{
+  width: 70%;
+}
+.img_ceo{
+  width: 200px;
+  height: 200px;
+  object-fit: none;
+  border-radius: 50%;
+}
+.ceo{
+  padding: 25px;
+}
+.ceo_foto{
+  margin: auto;
+  
+}
+.ceo_info{
+  text-align: justify;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+.infoUs_Uno{
+  margin: auto;
+  height: 380px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 15px 15px 0px 15px;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+
+} 
+.imagenUs{
+  width: 400px;
+  height: 400px;
 }

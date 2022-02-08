@@ -8,69 +8,133 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orienta&display=swap" rel="stylesheet">
   <title>Abogada Karina González</title>
- <!-- Font Awesome -->
- <script src="https://kit.fontawesome.com/03a735891b.js" crossorigin="anonymous"></script>
- <!-- Bootstrap -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- <!-- Css -->
- <link rel="stylesheet" href="../styleboos.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/03a735891b.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Css -->
+  <link rel="stylesheet" href="../styleboos.css">
 </head>
 <body>
-  <head class="conteiner pageBanner">
-    <div>
-      <nav class="navbar navbar-expand-lg bg-primary bg-gradient navbar-dark ">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../image/logo_Firma4.png" alt="Logo Firma" class="col-lg-6"> 
-          </a>
-          <ul class="navbar-nav col-6 d-flex justify-content-evenly">
+  <header class="pageBanner">
+    <nav class="navbar navbar-expand-lg nav_Menu">
+      <div class="container row">
+        <div class="col-lg-4">
+          <a class="navbar-brand" href="../index.html"><img src="../image/logo_Firma5.png" alt="Logo Firma" width="250px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse col-lg-8 mx-auto " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-4">
             <li class="nav-item">
-              <a class="nav-link active" href="../index.html">Home</a>
+              <a class="nav-link active fs-4" aria-current="page" href="../index.html">Home</a>
             </li>
-           <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-4" href="./nosotros.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./page/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="#">Fundadora</a></li>
+                <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                <li><a class="dropdown-item" href="#">Misión</a></li>
+                <li><a class="dropdown-item" href="#">Visión</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Equipo de trabajo</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./servicios.html">Servicios</a>
+              <a class="nav-link fs-4" href="./servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./opiniones.html">Opiniones</a>
+              <a class="nav-link fs-4" href="./opiniones.html">Opiniones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+              <a class="nav-link fs-4" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </head>
-  <main class="pageContent">
-    <div class="container-fluid imgUS">
-      <img src="../image/banner_Us.png" alt="Banner nosotros" class="img-fluid banner_Us">
-    </div>
-    <div class="row boxUs">
-      <div class="col-3 botonesUs">
-        <div class="boton1 btnUs">¿Quiénes somos?</div>
-        <div class="boton2 btnUs">Misión</div>
-        <div class="boton3 btnUs">Visión</div>
       </div>
-      <div class="col-9 elements_Us">
-        <div class="row">
-          <div class="col-6 infoUs_Uno">
-            Somos una firma comprometida a brindar servicios y soluciones legales de alta calidad, basándonos con principios de responsabilidad, eficiencia, confidencialidad y de ética profesional. Buscamos prestar una asesoría personalizada, cercana y receptiva frente a las necesidades de nuestros clientes, enmarcada por el propósito de agregar valor a su empresa. Prestamos servicios de asesoría legal y acompañamiento en procesos Civiles, de Familia, Laborales, Penales, Comercial, societario, Constitucional y Administrativo, en las diferentes etapas del conflicto.
-          </div>
-          <div class="col-6 imagenUs">
-            <img src="../image/img_QuienesSomos.gif" alt="Welcome" class="img-fluid img_QuienesSomos">
-          </div>
+    </nav>
+  </header>
+  <main class="pageContent">
+    <section class="row container-fluid mx-auto nosotros_ceo" id="nosotros_Ceo">
+      <h1 class="text-center nosotros_Title">Ceo - Fundadora</h1>
+      <div class="row ceo">
+        <figure class="text-center col-lg-3 ceo_foto">
+          <blockquote class="blockquote">
+            <img src="../image/ceo_abogada.png" alt="Welcome" class="img_ceo">
+          </blockquote>
+          <figcaption class="blockquote-footer">
+          <cite title="Source Title">Abogada Karina González</cite>
+          </figcaption>
+        </figure>
+        <div class="col-lg-9 ceo_info">
+          <p>Profesional en derecho, Egresada en La Universidad Católica del Táchira Venezuela, con homologación en el ministerio de educación de Colombia; teniendo la facultad de litigar en los 2 países, entre sus 10 años de experiencia se resaltan ramas de Derecho Internacional Público y privado con conocimientos en seguimiento y vigilancia de procesos, trámite de demandas, términos de  procedimiento judicial, preparación de audiencias, en amplias Ramas del Derecho, con experiencia comprobable entre lo que se resaltan: Defensa Penal en jurisdicción penal, elaboración de execuátur y trámites ante la Corte Interamericana de Derechos Humanos, Derecho Administrativo principalmente acciones de Reparación Directa, Responsabilidad contractual, extracontractual y penal en accidentes de tránsito y Responsabilidad Médica. Asesora jurídica para el desarrollo integral a familias vulnerables y desplazada. </p>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="container-fluid text-center text-white bg-primary bg-gradient">
-    <div class="row">
-      <div class="text-center text-dark pt-1">
-        Copyright© 2022 - Asuntos Legales Karina González. All Rights Reserved. Bogotá - Colombia
+    </section>
+    <section class="row container-fluid mx-auto nosotros" id="nosotros_QuienesSomos">
+      <h1 class="text-center nosotros_Title">¿Quiénes somos?</h1>
+      <div class="col-lg-6 infoUs_Uno">
+        Somos una firma comprometida a brindar servicios y soluciones legales de alta calidad, basándonos con principios de responsabilidad, eficiencia, confidencialidad y de ética profesional. Buscamos prestar una asesoría personalizada, cercana y receptiva frente a las necesidades de nuestros clientes, enmarcada por el propósito de agregar valor a su empresa. Prestamos servicios de asesoría legal y acompañamiento en procesos Civiles, de Familia, Laborales, Penales, Comercial, societario, Constitucional y Administrativo, en las diferentes etapas del conflicto.
       </div>
+      <div class="col-lg-6 imagenUs">
+        <img src="../image/img_QuienesSomos.gif" alt="Welcome" class="img-fluid img_QuienesSomos">
+      </div>  
+    </section>
+    <section class="row container-fluid mx-auto nosotros" id="nosotros_Vision">
+      <div class="col-lg-6 infoUs_Uno">
+        <h1 class="text-center nosotros_Title">Visión</h1>
+        Somos una firma comprometida a brindar servicios y soluciones legales de alta calidad, basándonos con principios de responsabilidad, eficiencia, confidencialidad y de ética profesional. Buscamos prestar una asesoría personalizada, cercana y receptiva frente a las necesidades de nuestros clientes, enmarcada por el propósito de agregar valor a su empresa. Prestamos servicios de asesoría legal y acompañamiento en procesos Civiles, de Familia, Laborales, Penales, Comercial, societario, Constitucional y Administrativo, en las diferentes etapas del conflicto.
+      </div>  
+      <div class="col-lg-6 infoUs_Uno">
+        <h1 class="text-center nosotros_Title">Misión</h1>
+        Somos una firma comprometida a brindar servicios y soluciones legales de alta calidad, basándonos con principios de responsabilidad, eficiencia, confidencialidad y de ética profesional. Buscamos prestar una asesoría personalizada, cercana y receptiva frente a las necesidades de nuestros clientes, enmarcada por el propósito de agregar valor a su empresa. Prestamos servicios de asesoría legal y acompañamiento en procesos Civiles, de Familia, Laborales, Penales, Comercial, societario, Constitucional y Administrativo, en las diferentes etapas del conflicto.
+      </div>  
+    </section>
+    <section class="container-fluid mx-auto nosotros" id="nosotros_Vision">
+      <div class="w-75">
+        <div class="infoUs_Equipo mx-auto">
+          <h1 class="text-center nosotros_Title">Equipo</h1>
+          Nuestra empresa cuenta además con un grupo selectivo de colaboradores en diferentes ramas del derecho; sin perjuicio de las condiciones pactadas por usted o con su empresa en materia de confidencialidad y exclusividad dependiendo del caso con el que se cuente.  
+        </div>  
+        <div class="row mx-auto">
+          <div class="col-lg-4">
+            <figure class="text-center ceo_foto">
+              <blockquote class="blockquote">
+                <img src="../image/ceo_abogada.png" alt="Welcome" class="img_ceo">
+              </blockquote>
+              <figcaption class="blockquote-footer">
+              <cite title="Source Title">Abogada Karina González</cite>
+              </figcaption>
+          </div>
+          <div class="col-lg-4">
+            <figure class="text-center col-lg-3 ceo_foto">
+              <blockquote class="blockquote">
+                <img src="../image/ceo_abogada.png" alt="Welcome" class="img_ceo">
+              </blockquote>
+              <figcaption class="blockquote-footer">
+              <cite title="Source Title">Abogada Karina González</cite>
+              </figcaption>
+          </div>
+          <div class="col-lg-4">
+            <figure class="text-center ceo_foto">
+              <blockquote class="blockquote">
+                <img src="../image/ceo_abogada.png" alt="Welcome" class="img_ceo">
+              </blockquote>
+              <figcaption class="blockquote-footer">
+              <cite title="Source Title">Abogada Karina González</cite>
+              </figcaption>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid text-center text-white footer">
+    <div class="row">
       <div class="pt-1 mb-1">
         <a class="btn btn-link btn-lg text-dark btn-floating" href="#!">
           <i class="fab fa-facebook-square fa-2x"></i>
@@ -81,6 +145,9 @@
         <a class="btn btn-link btn-lg text-dark btn-floating" href="#!">
           <i class="fab fa-instagram-square fa-2x"></i>
         </a>
+      </div>
+      <div class="text-center text-dark pt-5">
+        Copyright© 2022 - Asuntos Legales Karina González. All Rights Reserved. Bogotá - Colombia
       </div>
     </div>
   </footer>
