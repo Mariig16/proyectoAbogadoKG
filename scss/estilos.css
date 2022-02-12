@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_Menu {
+  background: #ad2ef5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ad2ef5), color-stop(24%, #ba0aff), color-stop(55%, white));
+  background: linear-gradient(180deg, #ad2ef5 0%, #ba0aff 24%, white 55%);
+  border-bottom: 2px solid #520f70;
+  height: 200px;
+}
+
+.nav_Menu a {
+  text-decoration: none;
+  color: #520f70;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.nav_Menu a:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  color: #a205fd;
+}
+
+.footer {
+  background: #ad2ef5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ad2ef5), color-stop(16%, #ba0aff), color-stop(38%, white));
+  background: linear-gradient(0deg, #ad2ef5 0%, #ba0aff 16%, white 38%);
+  height: 200px;
+  border-top: 2px solid #520f70;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #520f70;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.footer a:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  color: #a205fd;
+}
+
+.formulario {
+  background-color: #24303c;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
+}
+
+.formulario_Style {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #520f70;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.formulario_Style:focus {
+  height: 60px;
+  background-color: #32243cc5;
+}
+
+.formulario_Text {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.formulario_Btn {
+  width: 40%;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, right bottom, left top, from(#6a00a7), to(#dee8f3));
+  background: linear-gradient(to left top, #6a00a7, #dee8f3);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formulario_Btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  color: white;
+}
+
+.formulario_Btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  background: -webkit-gradient(linear, right bottom, left top, from(#dee8f3), to(#6a00a7));
+  background: linear-gradient(to left top, #dee8f3, #6a00a7);
+}
+/*# sourceMappingURL=estilos.css.map */
