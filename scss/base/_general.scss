@@ -3,37 +3,35 @@
   padding: 0; 
 }
 .nav_Menu{
-  background: rgb(173,46,245);
+  background: map-get($colores, bg);
   background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
-  border-bottom: 2px solid $colorprimario;
+  border-bottom: 2px solid map-get($colores, primario);
   height: $altura-nav-foot;
   a{
     text-decoration: none;
-    color: $colorprimario;
+    color: map-get($colores, primario);
     transition: all 3s;
     &:hover{
       cursor:pointer;
-      transform: translateY(-3px);
-      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-      color: rgb(162, 5, 253);
+      @extend %transfor;
+      color: map-get($colores, hover-color);
     }
   }
 }
 
 .footer{
-  background: rgb(173,46,245);
+  background: map-get($colores, bg);
   background: linear-gradient(0deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 16%, rgba(255,255,255,1) 38%);
   height: $altura-nav-foot;
-  border-top: 2px solid $colorprimario;
+  border-top: 2px solid map-get($colores, primario);
   a{
     text-decoration: none;
-    color: $colorprimario;
+    color: map-get($colores, primario);
     transition: all 3s;
     &:hover{
       cursor:pointer;
-      transform: translateY(-3px);
-      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-      color: rgb(162, 5, 253);
+      @extend %transfor;
+      color: map-get($colores, hover-color);
     }
   }  
 }

@@ -1,6 +1,6 @@
 .formulario{
+  @include tamano(400px, auto);
   background-color: #24303c;
-  width: 400px;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -10,7 +10,7 @@
   box-shadow: 7px 13px 37px #000;
 }
 .formulario_Style{
-  width: 100%;
+  @include tamano(100%, auto);
   background-color: #24303c;
   padding: 10px;
   border-radius: 4px;
@@ -18,7 +18,7 @@
   border: 1px solid $colorprimario;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-
+  
   &:focus{
     height: 60px;
     background-color: #32243cc5;
@@ -34,8 +34,7 @@
 }
 
 .formulario_Btn {
-  width: 40%;
-  height: 45px;
+  @include tamano(40%, 45px);
   margin-top: 20px;
   margin-left: 20px;
   border-radius: 4px;
@@ -47,8 +46,7 @@
   font-weight: bold;
   &:hover {
     cursor: pointer;
-    transform: translateY(-3px);
-    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    @extend %transfor;
     color: rgb(255, 255, 255);
   }
   &:active {

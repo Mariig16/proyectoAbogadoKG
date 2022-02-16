@@ -1,0 +1,18 @@
+Para el sitió agregé:
+1. Título: según la función de cada página, en donde en todas tenía el titulo de: Abogada Karina González,
+se simplificó la palabra abogada por Abg seguido del nombre y finalmente, en las subpáginas cada uno de los
+nombres:
+Index: Abg Karina González
+Nosotros: Abg Karina González - Nosotros
+Servicios: Abg Karina González - Servicios
+Opiniones: Abg Karina González - Opiniones
+Contacto: Abg Karina González - Contacto
+
+2. Keywords: en cada una de las páginas con palabras claves de mi sitio web
+"desarrollo web, HTML, CSS, bootstrap, coderhouse, lawyer, abogados, leyes, derecho penal, derecho laboral, derecho administrativo, derecho civil, Karina González"
+
+3. Descriptions: se realiza la descripción en cada una de las páginas según su funcionalidad
+
+4. H1: Cambié los H1 que tenía en la página Nosotros, dejando solo el principal como h1 y los demás con h2
+
+5: Favicon: para mostrar icono en las pestañas de mi sitio

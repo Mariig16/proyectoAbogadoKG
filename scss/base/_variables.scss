@@ -1,3 +1,22 @@
 $altura-nav-foot: 200px;
 $colorprimario: #520f70;
 
+// Mapas
+$colores: (
+  primario: #520f70,
+  secundario: #6a00a7,
+  bg: #ad2ef5,
+  hover-color: #a205fd
+);
+
+// Extends
+%transfor{
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+}
+
+// Mixins
+@mixin tamano($witdh, $height) {
+  width: $witdh;
+  height: $height;
+}

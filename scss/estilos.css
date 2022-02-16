@@ -1,3 +1,10 @@
+.nav_Menu a:hover, .footer a:hover, .formulario_Btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +27,6 @@
 
 .nav_Menu a:hover {
   cursor: pointer;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   color: #a205fd;
 }
 
@@ -44,16 +47,13 @@
 
 .footer a:hover {
   cursor: pointer;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   color: #a205fd;
 }
 
 .formulario {
-  background-color: #24303c;
   width: 400px;
+  height: auto;
+  background-color: #24303c;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -66,6 +66,7 @@
 
 .formulario_Style {
   width: 100%;
+  height: auto;
   background-color: #24303c;
   padding: 10px;
   border-radius: 4px;
@@ -105,10 +106,6 @@
 
 .formulario_Btn:hover {
   cursor: pointer;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   color: white;
 }
 
