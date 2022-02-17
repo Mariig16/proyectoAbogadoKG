@@ -50,6 +50,86 @@
   color: #a205fd;
 }
 
+.nosotros_Title {
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
+}
+
+.nosotros_ceo {
+  width: 70%;
+}
+
+.img_ceo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: none;
+     object-fit: none;
+  border-radius: 50%;
+}
+
+.ceo {
+  padding: 25px;
+}
+
+.ceo_foto {
+  margin: auto;
+}
+
+.ceo_info {
+  text-align: justify;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.infoUs_Uno {
+  margin: auto;
+  height: 380px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 15px 15px 0px 15px;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.imagenUs {
+  width: 400px;
+  height: 400px;
+}
+
+/* opiniones */
+.opiniones_Carousel {
+  width: 70%;
+  height: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: #050505;
+  border: 1px solid #520f70;
+  font-weight: bold;
+}
+
+.opiniones_Carousel .opiniones_Carousel_Tarjetas .opiones_Tarjetas .img-cuadro img {
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  -webkit-filter: invert(5);
+          filter: invert(5);
+}
+
+.usuario {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.opiones_Tarjetas {
+  margin-bottom: 20px;
+}
+
 .formulario {
   width: 400px;
   height: auto;
