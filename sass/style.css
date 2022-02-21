@@ -50,6 +50,29 @@
   color: #a205fd;
 }
 
+.navbar-toggler-icon {
+  z-index: 1000;
+  color: #520f70;
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    background-color: #9e1d6d;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #b49191;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #56df44;
+  }
+}
+
 .nosotros_Title {
   border-bottom: 2px solid #520f70;
   padding: 25px;
@@ -96,7 +119,31 @@
   height: 400px;
 }
 
-/* opiniones */
+.servicios_Btn {
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  background: -webkit-gradient(linear, right bottom, left top, from(#6a00a7), to(#dee8f3));
+  background: linear-gradient(to left top, #6a00a7, #dee8f3);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.servicios_Btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  color: white;
+}
+
+.card-text {
+  cursor: default;
+  padding-bottom: 20px;
+}
+
 .opiniones_Carousel {
   width: 70%;
   height: 400px;
@@ -195,4 +242,4 @@
   background: -webkit-gradient(linear, right bottom, left top, from(#dee8f3), to(#6a00a7));
   background: linear-gradient(to left top, #dee8f3, #6a00a7);
 }
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=style.css.map */

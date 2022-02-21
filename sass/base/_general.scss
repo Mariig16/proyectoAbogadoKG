@@ -35,3 +35,23 @@
     }
   }  
 }
+.navbar-toggler-icon{
+  z-index: 1000;
+  color: map-get($colores, primario);
+}
+
+@include mediaQuery (mobile){
+  body{
+    background-color: rgb(158, 29, 109);
+  }
+}
+@include mediaQuery (tablet){
+  body{
+    background-color: rgb(180, 145, 145);
+  }
+}
+@include mediaQuery (desktop){
+  body{
+    background-color: rgb(86, 223, 68);
+  }
+}
