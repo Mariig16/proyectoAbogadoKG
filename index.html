@@ -21,26 +21,31 @@
   <link rel="stylesheet" href="./sass/style.css">
 </head>
 <body>
-  <header class="pageBanner">
-    <nav class="navbar navbar-expand-lg nav_Menu">
-      <div class="container-fluid">
-        <a class="navbar-brand img-logo" href="../index.html"><img src="./image/logo_Firma5.png" alt="Logo Firma" width="250px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="font-size:28px;"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+  <header class="nav_Menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container row">
+        <div class="col-lg-4 nav-elements">
+          <a class="navbar-brand" href="./index.html"><img src="./image/logo_Firma5.png" alt="Logo Firma" width="250px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="font-size:28px;"></i></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse col-lg-8 mx-auto " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto p-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fs-4" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link fs-4" href="./page/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link fs-4" href="./page/servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link fs-4" href="./page/opiniones.html">Opiniones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="./page/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>

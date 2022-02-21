@@ -17,6 +17,14 @@
       color: map-get($colores, hover-color);
     }
   }
+  .nav-elements{
+    display: flex;
+    justify-content: space-between;
+    .navbar-toggler-icon{
+      z-index: 1000;
+      color: map-get($colores, primario);
+    }
+  }
 }
 
 .footer{
@@ -35,10 +43,7 @@
     }
   }  
 }
-.navbar-toggler-icon{
-  z-index: 1000;
-  color: map-get($colores, primario);
-}
+
 
 @include mediaQuery (mobile){
   body{
