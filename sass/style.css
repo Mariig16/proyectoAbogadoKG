@@ -106,32 +106,6 @@
   padding: 25px;
 }
 
-.nosotros_ceo {
-  width: 70%;
-}
-
-.img_ceo {
-  width: 200px;
-  height: 200px;
-  -o-object-fit: none;
-     object-fit: none;
-  border-radius: 50%;
-}
-
-.ceo {
-  padding: 25px;
-}
-
-.ceo_foto {
-  margin: auto;
-}
-
-.ceo_info {
-  text-align: justify;
-  line-height: 35px;
-  font-family: 'Roboto', sans-serif;
-}
-
 .infoUs_Uno {
   margin: auto;
   height: 380px;
@@ -145,6 +119,34 @@
 .imagenUs {
   width: 400px;
   height: 400px;
+}
+
+.nosotros_vm {
+  width: 70%;
+}
+
+.ceo {
+  padding: 25px;
+  background-color: black;
+}
+
+.ceo .ceo_foto {
+  margin: auto;
+}
+
+.ceo .ceo_foto .img_ceo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: none;
+     object-fit: none;
+  border-radius: 50%;
+}
+
+.ceo .ceo_info {
+  text-align: justify;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 .servicios_Btn {
