@@ -21,9 +21,9 @@
     display: flex;
     justify-content: space-between;
     .navbar-toggler-icon{
-      z-index: 1000;
-      color: map-get($colores, primario);
-    }
+  z-index: 1000;
+  color: map-get($colores, primario);
+}
   }
 }
 
@@ -57,6 +57,6 @@
 }
 @include mediaQuery (desktop){
   body{
-    background-color: rgb(86, 223, 68);
+    background-color: rgb(255, 255, 255);
   }
 }

@@ -78,8 +78,27 @@
 
 @media only screen and (min-width: 1024px) {
   body {
-    background-color: #56df44;
+    background-color: white;
   }
+}
+
+.info-inicio {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 20px;
+  background-color: black;
+}
+
+.info-inicio .info-frases {
+  margin: auto;
+}
+
+.info-inicio .info-frases .info-titulo {
+  font-size: 40px;
+}
+
+.info-inicio .info-frases .info-text {
+  font-size: 20px;
 }
 
 .nosotros_Title {
