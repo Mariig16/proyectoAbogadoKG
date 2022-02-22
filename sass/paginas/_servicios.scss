@@ -5,8 +5,6 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
- 
-  
 }
 .servicios_Btn:hover{
   cursor:pointer;
@@ -18,4 +16,21 @@
 .card-text{
   cursor: default;
   padding-bottom: 20px;
+}
+.modal-header{
+  background-color: map-get($colores, primario);
+  color: white;
+  .btn-close{
+    background-color: white;
+  }
+}
+
+.img-laboral{
+  width: 100%;
+}
+.info-laboral{
+  padding: 20px;
+  .ol li{
+    list-style-type: circle;
+  }
 }
