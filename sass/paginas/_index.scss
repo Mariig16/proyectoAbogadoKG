@@ -1,0 +1,15 @@
+.info-inicio{
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  padding: 20px;
+  background-color: black;
+  .info-frases{
+    margin: auto;
+    .info-titulo{
+      font-size: 40px;
+    }
+    .info-text{
+      font-size: 20px;
+    }
+  }
+}

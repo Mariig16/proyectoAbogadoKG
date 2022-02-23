@@ -15,7 +15,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#ad2ef5), color-stop(24%, #ba0aff), color-stop(55%, white));
   background: linear-gradient(180deg, #ad2ef5 0%, #ba0aff 24%, white 55%);
   border-bottom: 2px solid #520f70;
-  height: 200px;
+  height: auto;
 }
 
 .nav_Menu a {
@@ -30,11 +30,25 @@
   color: #a205fd;
 }
 
+.nav_Menu .nav-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_Menu .nav-elements .navbar-toggler-icon {
+  z-index: 1000;
+  color: #520f70;
+}
+
 .footer {
   background: #ad2ef5;
   background: -webkit-gradient(linear, left bottom, left top, from(#ad2ef5), color-stop(16%, #ba0aff), color-stop(38%, white));
   background: linear-gradient(0deg, #ad2ef5 0%, #ba0aff 16%, white 38%);
-  height: 200px;
+  height: auto;
   border-top: 2px solid #520f70;
 }
 
@@ -50,35 +64,46 @@
   color: #a205fd;
 }
 
-.nosotros_Title {
-  border-bottom: 2px solid #520f70;
-  padding: 25px;
+@media only screen and (min-width: 320px) {
+  body {
+    background-color: #9e1d6d;
+  }
 }
 
-.nosotros_ceo {
-  width: 70%;
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #b49191;
+  }
 }
 
-.img_ceo {
-  width: 200px;
-  height: 200px;
-  -o-object-fit: none;
-     object-fit: none;
-  border-radius: 50%;
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: white;
+  }
 }
 
-.ceo {
-  padding: 25px;
+.info-inicio {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 20px;
+  background-color: black;
 }
 
-.ceo_foto {
+.info-inicio .info-frases {
   margin: auto;
 }
 
-.ceo_info {
-  text-align: justify;
-  line-height: 35px;
-  font-family: 'Roboto', sans-serif;
+.info-inicio .info-frases .info-titulo {
+  font-size: 40px;
+}
+
+.info-inicio .info-frases .info-text {
+  font-size: 20px;
+}
+
+.nosotros_Title {
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
 }
 
 .infoUs_Uno {
@@ -87,7 +112,6 @@
   line-height: 30px;
   text-align: justify;
   padding: 15px 15px 0px 15px;
-  line-height: 35px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -96,7 +120,80 @@
   height: 400px;
 }
 
-/* opiniones */
+.nosotros_vm {
+  width: 70%;
+}
+
+.ceo {
+  padding: 25px;
+  background-color: black;
+}
+
+.ceo .ceo_foto {
+  margin: auto;
+}
+
+.ceo .ceo_foto .img_ceo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: none;
+     object-fit: none;
+  border-radius: 50%;
+}
+
+.ceo .ceo_info {
+  text-align: justify;
+  line-height: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.servicios_Btn {
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  background: -webkit-gradient(linear, right bottom, left top, from(#6a00a7), to(#dee8f3));
+  background: linear-gradient(to left top, #6a00a7, #dee8f3);
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.servicios_Btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  color: white;
+}
+
+.card-text {
+  cursor: default;
+  padding-bottom: 20px;
+}
+
+.modal-header {
+  background-color: #520f70;
+  color: white;
+}
+
+.modal-header .btn-close {
+  background-color: white;
+}
+
+.img-modal {
+  width: 100%;
+}
+
+.info-modal {
+  padding: 20px;
+}
+
+.info-modal .ol li {
+  list-style-type: circle;
+}
+
 .opiniones_Carousel {
   width: 70%;
   height: 400px;
@@ -133,10 +230,11 @@
 .formulario {
   width: 400px;
   height: auto;
-  background-color: #24303c;
+  background-color: #36243c;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -167,6 +265,7 @@
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  color: white;
 }
 
 .formulario_Btn {
@@ -176,7 +275,7 @@
   margin-left: 20px;
   border-radius: 4px;
   border: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
   background: -webkit-gradient(linear, right bottom, left top, from(#6a00a7), to(#dee8f3));
   background: linear-gradient(to left top, #6a00a7, #dee8f3);
@@ -195,4 +294,16 @@
   background: -webkit-gradient(linear, right bottom, left top, from(#dee8f3), to(#6a00a7));
   background: linear-gradient(to left top, #dee8f3, #6a00a7);
 }
-/*# sourceMappingURL=estilos.css.map */
+
+.map {
+  margin: auto;
+}
+
+.contacto_Info {
+  font-family: 'Roboto', sans-serif;
+  color: #080808;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

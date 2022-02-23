@@ -18,16 +18,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Css -->
   <!-- <link rel="stylesheet" href="./styleboos.css"> -->
-  <link rel="stylesheet" href="./scss/estilos.css">
+  <link rel="stylesheet" href="./sass/style.css">
 </head>
 <body>
-  <header class="pageBanner">
-    <nav class="navbar navbar-expand-lg nav_Menu">
+  <header class="nav_Menu">
+    <nav class="navbar navbar-expand-lg">
       <div class="container row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 nav-elements">
           <a class="navbar-brand" href="./index.html"><img src="./image/logo_Firma5.png" alt="Logo Firma" width="250px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-bars" style="font-size:28px;"></i></span>
           </button>
         </div>
         <div class="collapse navbar-collapse col-lg-8 mx-auto " id="navbarSupportedContent">
@@ -35,19 +35,8 @@
             <li class="nav-item">
               <a class="nav-link active fs-4" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nosotros
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./page/nosotros.html">Nosotros</a></li>
-                <li><a class="dropdown-item" href="#">Fundadora</a></li>
-                <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
-                <li><a class="dropdown-item" href="#">Misión</a></li>
-                <li><a class="dropdown-item" href="#">Visión</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Equipo de trabajo</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="./page/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-4" href="./page/servicios.html">Servicios</a>
@@ -64,6 +53,15 @@
     </nav>
   </header>
   <main class="container-fluid pageContent">
+    <section class="row info-inicio">
+      <div class="col-lg-6 info-frases">
+        <h1 class="info-titulo">¿Necesitas ayuda?</h1><br>
+        <h2 class="info-texto">Asesoría con profesionales a su disposición</h2>
+      </div>
+      <div class="col-lg-6">
+        <img src="./image/img-index.png" alt="Marketing">
+      </div>
+    </section>
     <div class="row ms-0">
       <img src="image/img_Inicial.gif" class="col-lg-8 col-md-6 col-sm-4 imgInicial" alt="Welcome">
       <div class="col-lg-4 col-md-6 col-sm-8 my-auto p-4 ms-0 textInitial">

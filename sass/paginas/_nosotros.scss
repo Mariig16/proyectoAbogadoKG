@@ -1,0 +1,38 @@
+.nosotros_Title{
+  border-bottom: 2px solid map-get($colores, primario);
+  padding: 25px;
+}
+.infoUs_Uno{
+  margin: auto;
+  height: 380px;
+  line-height: 30px;
+  text-align: justify;
+  padding: 15px 15px 0px 15px;
+  font-family: 'Roboto', sans-serif;
+} 
+.imagenUs{
+  width: 400px;
+  height: 400px;
+}
+.nosotros_vm{
+  width: 70%;
+}
+.ceo{
+  padding: 25px;
+  background-color: black;
+  .ceo_foto{
+    margin: auto;
+    .img_ceo{
+      width: 200px;
+      height: 200px;
+      object-fit: none;
+      border-radius: 50%;
+    }
+  }
+  .ceo_info{
+    text-align: justify;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+}
