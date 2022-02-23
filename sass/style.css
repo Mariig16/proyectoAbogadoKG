@@ -183,15 +183,15 @@
   background-color: white;
 }
 
-.img-laboral {
+.img-modal {
   width: 100%;
 }
 
-.info-laboral {
+.info-modal {
   padding: 20px;
 }
 
-.info-laboral .ol li {
+.info-modal .ol li {
   list-style-type: circle;
 }
 
