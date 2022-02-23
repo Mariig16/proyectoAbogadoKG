@@ -64,15 +64,17 @@
   color: #a205fd;
 }
 
-@media only screen and (min-width: 320px) {
-  body {
-    background-color: #9e1d6d;
+@media only screen and (max-width: 425px) {
+  .nosotros_mv .img-mv {
+    visibility: hidden;
+    position: absolute;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: #b49191;
+@media only screen and (max-width: 768px) {
+  .nosotros_mv .img-mv {
+    visibility: hidden;
+    position: absolute;
   }
 }
 
@@ -113,18 +115,20 @@
   text-align: justify;
   padding: 15px 15px 0px 15px;
   font-family: 'Roboto', sans-serif;
+  height: auto;
 }
 
 .imagenUs {
-  width: 400px;
-  height: 400px;
+  margin: auto;
 }
 
-.nosotros_vm {
-  width: 70%;
+.nosotros_mv {
+  width: 80%;
+  margin: auto;
 }
 
 .ceo {
+  margin-top: 40px;
   padding: 25px;
   background-color: black;
 }
