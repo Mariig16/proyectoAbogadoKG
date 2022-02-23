@@ -1,9 +1,10 @@
 .formulario{
   @include tamano(400px, auto);
-  background-color: #24303c;
+  background-color: #36243c;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -30,16 +31,16 @@
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  color: white;
   
 }
-
 .formulario_Btn {
   @include tamano(40%, 45px);
   margin-top: 20px;
   margin-left: 20px;
   border-radius: 4px;
   border: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   background: linear-gradient(to left top, #6a00a7, #dee8f3);
   font-size: 20px;
@@ -53,4 +54,14 @@
     transform: translateY(3px);
     background: linear-gradient(to left top, #dee8f3, #6a00a7);
   }
+}
+.map{
+  margin: auto;
+}
+.contacto_Info{
+  font-family: 'Roboto', sans-serif;
+  color:rgb(8, 8, 8);
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
 }
