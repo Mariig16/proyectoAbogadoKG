@@ -23,11 +23,11 @@ $colores: (
 
 @mixin mediaQuery($diseñoPantalla){
   @if $diseñoPantalla == mobile{
-    @media only screen and (min-width: 320px){
+    @media only screen and (max-width: 425px){
       @content;
     }
   } @else if $diseñoPantalla == tablet{
-    @media only screen and (min-width: 768px){
+    @media only screen and (max-width: 768px){
       @content;
     }
   }

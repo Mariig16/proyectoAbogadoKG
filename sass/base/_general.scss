@@ -21,9 +21,9 @@
     display: flex;
     justify-content: space-between;
     .navbar-toggler-icon{
-  z-index: 1000;
-  color: map-get($colores, primario);
-}
+      z-index: 1000;
+      color: map-get($colores, primario);
+    }
   }
 }
 
@@ -46,17 +46,23 @@
 
 
 @include mediaQuery (mobile){
-  body{
-    background-color: rgb(158, 29, 109);
+  .nosotros_mv{
+    .img-mv{
+      visibility: hidden;
+      position: absolute;
+    }
   }
 }
 @include mediaQuery (tablet){
-  body{
-    background-color: rgb(180, 145, 145);
+  .nosotros_mv{
+    .img-mv{
+      visibility: hidden;
+      position: absolute;
+    }
   }
 }
 @include mediaQuery (desktop){
   body{
     background-color: rgb(255, 255, 255);
-  }
+    } 
 }

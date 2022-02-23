@@ -9,15 +9,18 @@
   text-align: justify;
   padding: 15px 15px 0px 15px;
   font-family: 'Roboto', sans-serif;
+  height: auto;
 } 
 .imagenUs{
-  width: 400px;
-  height: 400px;
+  margin: auto;
 }
-.nosotros_vm{
-  width: 70%;
+.nosotros_mv{
+  width: 80%;
+  margin: auto;
 }
+
 .ceo{
+  margin-top: 40px;
   padding: 25px;
   background-color: black;
   .ceo_foto{
