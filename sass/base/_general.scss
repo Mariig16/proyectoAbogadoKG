@@ -3,10 +3,14 @@
   padding: 0; 
 }
 .nav_Menu{
+  width: 100%;
   background: map-get($colores, bg);
   background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
   border-bottom: 2px solid map-get($colores, primario);
   height: $altura-nav-foot;
+  .logo{
+    width: 220px;
+  }
   a{
     text-decoration: none;
     color: map-get($colores, primario);

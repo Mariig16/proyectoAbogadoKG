@@ -6,6 +6,7 @@
   
 }
 .nav_Menu{
+  position: fixed;
   background: rgb(173,46,245);
   background: linear-gradient(180deg, rgba(173,46,245,1) 0%, rgba(186,10,255,1) 24%, rgba(255,255,255,1) 55%);
   height: 200px;
