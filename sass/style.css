@@ -11,11 +11,16 @@
 }
 
 .nav_Menu {
+  width: 100%;
   background: #ad2ef5;
   background: -webkit-gradient(linear, left top, left bottom, from(#ad2ef5), color-stop(24%, #ba0aff), color-stop(55%, white));
   background: linear-gradient(180deg, #ad2ef5 0%, #ba0aff 24%, white 55%);
   border-bottom: 2px solid #520f70;
   height: auto;
+}
+
+.nav_Menu .logo {
+  width: 220px;
 }
 
 .nav_Menu a {
