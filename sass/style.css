@@ -117,7 +117,7 @@
   margin: auto;
   height: 380px;
   line-height: 30px;
-  text-align: justify;
+  text-align: left;
   padding: 15px 15px 0px 15px;
   font-family: 'Roboto', sans-serif;
   height: auto;
@@ -128,12 +128,13 @@
 }
 
 .nosotros_mv {
+  text-align: left;
   width: 80%;
   margin: auto;
 }
 
 .ceo {
-  margin-top: 40px;
+  margin: 40px;
   padding: 25px;
   background-color: black;
 }
@@ -151,7 +152,7 @@
 }
 
 .ceo .ceo_info {
-  text-align: justify;
+  text-align: left;
   line-height: 35px;
   font-family: 'Roboto', sans-serif;
   color: white;
