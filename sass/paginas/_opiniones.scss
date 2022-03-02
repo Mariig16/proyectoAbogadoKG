@@ -1,6 +1,6 @@
 .opiniones_Carousel{
   width: 70%;
-  height: 400px;
+  height: 500px;
   padding: 30px;
   margin: auto;
   margin-top: 10px;
@@ -11,10 +11,16 @@
   border: 1px solid map-get($colores, primario);
   font-weight: bold;
 }
+.blockquote-footer{
+  margin-top: 10px;
+  height: 300px;
+}
 .opiniones_Carousel .opiniones_Carousel_Tarjetas .opiones_Tarjetas .img-cuadro img{
   border-radius: 50%;
 }
-
+.carousel-indicators [data-bs-target]{
+  background-color:map-get($colores, primario);
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(5);

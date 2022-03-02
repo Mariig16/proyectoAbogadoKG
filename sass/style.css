@@ -74,6 +74,9 @@
     visibility: hidden;
     position: absolute;
   }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    visibility: visible;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -81,11 +84,19 @@
     visibility: hidden;
     position: absolute;
   }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
     background-color: white;
+  }
+  .blockquote-footer {
+    width: 700px;
+    background-color: aqua;
+    margin: auto;
   }
 }
 
@@ -206,7 +217,7 @@
 
 .opiniones_Carousel {
   width: 70%;
-  height: 400px;
+  height: 500px;
   padding: 30px;
   margin: auto;
   margin-top: 10px;
@@ -218,12 +229,20 @@
   font-weight: bold;
 }
 
+.blockquote-footer {
+  margin-top: 10px;
+  height: 300px;
+}
+
 .opiniones_Carousel .opiniones_Carousel_Tarjetas .opiones_Tarjetas .img-cuadro img {
   border-radius: 50%;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.carousel-indicators [data-bs-target] {
+  background-color: #520f70;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
   -webkit-filter: invert(5);
           filter: invert(5);
 }
