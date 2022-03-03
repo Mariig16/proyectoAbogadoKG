@@ -1,18 +1,19 @@
 .formulario{
   @include tamano(400px, auto);
-  background-color: #36243c;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 20px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 50px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid $colorprimario;
   box-shadow: 7px 13px 37px #000;
 }
 .formulario_Style{
   @include tamano(100%, auto);
-  background-color: #24303c;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -22,8 +23,13 @@
   
   &:focus{
     height: 60px;
-    background-color: #32243cc5;
+    background-color: map-get($colores, primario);
+    color: #dee8f3;
   } 
+}
+.elements_Contacto{
+  padding: 10px;
+  background-color: map-get($colores, primario);
 }
 .formulario_Text{
   font-size: 24px;
@@ -31,7 +37,7 @@
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: map-get($colores, primario);
   
 }
 .formulario_Btn {
@@ -40,7 +46,7 @@
   margin-left: 20px;
   border-radius: 4px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   background: linear-gradient(to left top, #6a00a7, #dee8f3);
   font-size: 20px;
@@ -55,13 +61,16 @@
     background: linear-gradient(to left top, #dee8f3, #6a00a7);
   }
 }
+
 .map{
   margin: auto;
+  width: 90%;
 }
 .contacto_Info{
   font-family: 'Roboto', sans-serif;
-  color:rgb(8, 8, 8);
-  font-size: 30px;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  padding-left: 5px;
 }
