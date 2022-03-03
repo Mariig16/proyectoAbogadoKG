@@ -10,70 +10,72 @@
   color: rgb(0, 0, 0);
   border: 1px solid $colorprimario;
   box-shadow: 7px 13px 37px #000;
+  .formulario_Text{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colores, primario);
+    
+  }
+  .formulario_Style{
+    @include tamano(100%, auto);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid $colorprimario;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    
+    &:focus{
+      height: 60px;
+      background-color: map-get($colores, primario);
+      color: #dee8f3;
+    } 
+  }
+  .formulario_Btn {
+    @include tamano(40%, 45px);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background: linear-gradient(to left top, #6a00a7, #dee8f3);
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      @extend %transfor;
+      color: rgb(255, 255, 255);
+    }
+    &:active {
+      transform: translateY(3px);
+      background: linear-gradient(to left top, #dee8f3, #6a00a7);
+    }
+  }
 }
-.formulario_Style{
-  @include tamano(100%, auto);
-  background-color: #ffffff;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  border: 1px solid $colorprimario;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  
-  &:focus{
-    height: 60px;
-    background-color: map-get($colores, primario);
-    color: #dee8f3;
-  } 
-}
+
 .elements_Contacto{
   padding: 10px;
   background-color: map-get($colores, primario);
-}
-.formulario_Text{
-  font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: map-get($colores, primario);
+  .contacto_Info{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    margin: auto;
+    text-align: left;
+    padding-left: 5px;
+  }
   
-}
-.formulario_Btn {
-  @include tamano(40%, 45px);
-  margin-top: 20px;
-  margin-left: 20px;
-  border-radius: 4px;
-  border: none;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  background: linear-gradient(to left top, #6a00a7, #dee8f3);
-  font-size: 20px;
-  font-weight: bold;
-  &:hover {
-    cursor: pointer;
-    @extend %transfor;
-    color: rgb(255, 255, 255);
+  .map{
+    margin: auto;
+    width: 90%;
   }
-  &:active {
-    transform: translateY(3px);
-    background: linear-gradient(to left top, #dee8f3, #6a00a7);
-  }
-}
-.row{
-margin: 0px;
 }
 
-.map{
-  margin: auto;
-  width: 90%;
-}
-.contacto_Info{
-  font-family: 'Roboto', sans-serif;
-  color:rgb(255, 255, 255);
-  font-size: 20px;
-  margin: auto;
-  text-align: left;
-  padding-left: 5px;
+.row{
+margin: 0px;
 }

@@ -1,4 +1,4 @@
-.nav_Menu a:hover, .footer a:hover, .formulario_Btn:hover {
+.nav_Menu a:hover, .footer a:hover, .formulario .formulario_Btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
@@ -117,11 +117,6 @@
   font-size: 20px;
 }
 
-.nosotros_Title {
-  border-bottom: 2px solid #520f70;
-  padding: 25px;
-}
-
 .infoUs_Uno {
   margin: auto;
   height: 380px;
@@ -132,14 +127,13 @@
   height: auto;
 }
 
-.img_Us {
-  width: 100%;
+.infoUs_Uno .nosotros_Title {
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
 }
 
-.nosotros_mv {
-  text-align: left;
-  width: 80%;
-  margin: auto;
+.infoUs_Uno .img_Us {
+  width: 100%;
 }
 
 .us_mision-vision {
@@ -285,7 +279,16 @@
           box-shadow: 7px 13px 37px #000;
 }
 
-.formulario_Style {
+.formulario .formulario_Text {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #520f70;
+}
+
+.formulario .formulario_Style {
   width: 100%;
   height: auto;
   background-color: #ffffff;
@@ -297,27 +300,13 @@
   font-size: 18px;
 }
 
-.formulario_Style:focus {
+.formulario .formulario_Style:focus {
   height: 60px;
   background-color: #520f70;
   color: #dee8f3;
 }
 
-.elements_Contacto {
-  padding: 10px;
-  background-color: #520f70;
-}
-
-.formulario_Text {
-  font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #520f70;
-}
-
-.formulario_Btn {
+.formulario .formulario_Btn {
   width: 40%;
   height: 45px;
   margin-top: 20px;
@@ -332,33 +321,38 @@
   font-weight: bold;
 }
 
-.formulario_Btn:hover {
+.formulario .formulario_Btn:hover {
   cursor: pointer;
   color: white;
 }
 
-.formulario_Btn:active {
+.formulario .formulario_Btn:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   background: -webkit-gradient(linear, right bottom, left top, from(#dee8f3), to(#6a00a7));
   background: linear-gradient(to left top, #dee8f3, #6a00a7);
 }
 
-.row {
-  margin: 0px;
+.elements_Contacto {
+  padding: 10px;
+  background-color: #520f70;
 }
 
-.map {
-  margin: auto;
-  width: 90%;
-}
-
-.contacto_Info {
+.elements_Contacto .contacto_Info {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 20px;
   margin: auto;
   text-align: left;
   padding-left: 5px;
+}
+
+.elements_Contacto .map {
+  margin: auto;
+  width: 90%;
+}
+
+.row {
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
