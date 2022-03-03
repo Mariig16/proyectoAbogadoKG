@@ -74,23 +74,20 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    visibility: visible;
+  .body {
+    background-color: black;
   }
-  .formulario {
-    width: auto;
+  .info-inicio .info-frases {
+    margin: auto;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    visibility: hidden;
+  .info-inicio .info-frases .info-titulo {
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body {
-    background-color: white;
+  .body {
+    background-color: #da2626;
   }
   .blockquote-footer {
     width: 500px;
@@ -102,7 +99,7 @@
   font-family: 'Roboto', sans-serif;
   color: white;
   padding: 20px;
-  background-color: black;
+  background-color: #520f70;
 }
 
 .info-inicio .info-frases {
@@ -240,7 +237,12 @@
   margin-bottom: 20px;
 }
 
-.opiniones_Carousel .opiones_Tarjetas .usuario {
+.opiniones_Carousel .opiones_Tarjetas .img-cuadro {
+  width: 200px;
+  height: 200px;
+}
+
+.opiniones_Carousel .opiones_Tarjetas .img-cuadro .usuario {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -258,7 +260,8 @@
   background-color: #520f70;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   -webkit-filter: invert(5);
           filter: invert(5);
 }

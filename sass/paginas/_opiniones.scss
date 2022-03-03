@@ -12,8 +12,12 @@
   font-weight: bold;
   .opiones_Tarjetas{
     margin-bottom: 20px;
-    .usuario{
-      object-fit: cover;
+    .img-cuadro{
+      width: 200px;
+      height: 200px;
+      .usuario{
+        object-fit: cover;
+      }
     }
     .blockquote-footer{
       margin-top: 10px;

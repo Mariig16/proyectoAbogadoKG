@@ -52,22 +52,26 @@
 }
 
 @include mediaQuery (mobile){
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    visibility: visible;
+  .body{
+    background-color: black;
   }
-  .formulario{
-    width: auto;
+  .info-inicio{
+    .info-frases{
+      margin: auto;
+      .info-titulo{
+        font-size: 20px;
+      }
+    }
   }
 }
 @include mediaQuery (tablet){
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-    visibility: hidden;
-  }
+
+
 }
 @include mediaQuery (desktop){
-  body{
-    background-color: rgb(255, 255, 255);
-  } 
+  .body{
+    background-color: rgb(218, 38, 38);
+  }
   .blockquote-footer{
     width: 500px;
     margin: auto;
