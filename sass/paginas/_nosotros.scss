@@ -11,15 +11,26 @@
   font-family: 'Roboto', sans-serif;
   height: auto;
 } 
-.imagenUs{
-  margin: auto;
+
+.img_Us{
+  width: 100%;
 }
+
 .nosotros_mv{
   text-align: left;
   width: 80%;
   margin: auto;
 }
 
+.us_mision-vision{
+  background-color: map-get($colores, primario);
+  padding: 30px;
+  color: white;
+  .nosotros_Title2{
+    border-bottom: 2px solid white;
+    
+  }
+}
 .ceo{
   margin: 40px;
   padding: 25px;
@@ -31,6 +42,10 @@
       height: 200px;
       object-fit: none;
       border-radius: 50%;
+    }
+    .blockquote-footer{
+      margin-top: 10px;
+      width: 200px;
     }
   }
   .ceo_info{

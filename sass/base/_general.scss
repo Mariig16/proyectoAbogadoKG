@@ -14,7 +14,7 @@
   a{
     text-decoration: none;
     color: map-get($colores, primario);
-    transition: all 3s;
+    transition: all 0,5s;
     &:hover{
       cursor:pointer;
       @extend %transfor;
@@ -24,6 +24,9 @@
   .nav-elements{
     display: flex;
     justify-content: space-between;
+    .navbar-toggler{
+      padding: 0px;
+    }
     .navbar-toggler-icon{
       z-index: 1000;
       color: map-get($colores, primario);
@@ -49,27 +52,14 @@
 }
 
 @include mediaQuery (mobile){
-  .nosotros_mv{
-    .img-mv{
-      visibility: hidden;
-      position: absolute;
-    }
-  }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     visibility: visible;
   }
   .formulario{
     width: auto;
   }
-
 }
 @include mediaQuery (tablet){
-  .nosotros_mv{
-    .img-mv{
-      visibility: hidden;
-      position: absolute;
-    }
-  }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     visibility: hidden;
   }
@@ -79,8 +69,7 @@
     background-color: rgb(255, 255, 255);
   } 
   .blockquote-footer{
-    width: 700px;
-    background-color: aqua;
+    width: 500px;
     margin: auto;
   }
 }

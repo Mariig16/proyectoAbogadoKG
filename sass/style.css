@@ -26,8 +26,8 @@
 .nav_Menu a {
   text-decoration: none;
   color: #520f70;
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  -webkit-transition: all 0,5s;
+  transition: all 0,5s;
 }
 
 .nav_Menu a:hover {
@@ -42,6 +42,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav_Menu .nav-elements .navbar-toggler {
+  padding: 0px;
 }
 
 .nav_Menu .nav-elements .navbar-toggler-icon {
@@ -70,10 +74,6 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .nosotros_mv .img-mv {
-    visibility: hidden;
-    position: absolute;
-  }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     visibility: visible;
   }
@@ -83,10 +83,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .nosotros_mv .img-mv {
-    visibility: hidden;
-    position: absolute;
-  }
   .carousel-control-next-icon, .carousel-control-prev-icon {
     visibility: hidden;
   }
@@ -97,8 +93,7 @@
     background-color: white;
   }
   .blockquote-footer {
-    width: 700px;
-    background-color: aqua;
+    width: 500px;
     margin: auto;
   }
 }
@@ -137,14 +132,24 @@
   height: auto;
 }
 
-.imagenUs {
-  margin: auto;
+.img_Us {
+  width: 100%;
 }
 
 .nosotros_mv {
   text-align: left;
   width: 80%;
   margin: auto;
+}
+
+.us_mision-vision {
+  background-color: #520f70;
+  padding: 30px;
+  color: white;
+}
+
+.us_mision-vision .nosotros_Title2 {
+  border-bottom: 2px solid white;
 }
 
 .ceo {
@@ -163,6 +168,11 @@
   -o-object-fit: none;
      object-fit: none;
   border-radius: 50%;
+}
+
+.ceo .ceo_foto .blockquote-footer {
+  margin-top: 10px;
+  width: 200px;
 }
 
 .ceo .ceo_info {
