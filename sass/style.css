@@ -334,6 +334,10 @@
   background: linear-gradient(to left top, #dee8f3, #6a00a7);
 }
 
+.row {
+  margin: 0px;
+}
+
 .map {
   margin: auto;
   width: 90%;
