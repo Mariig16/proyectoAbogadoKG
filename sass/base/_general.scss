@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0; 
 }
+
 .nav_Menu{
   width: 100%;
   background: map-get($colores, bg);
@@ -52,28 +53,32 @@
 }
 
 @include mediaQuery (mobile){
-  .body{
-    background-color: black;
+  .ceo .ceo_foto .blockquote-footer {
+    margin: auto;
   }
-  .info-inicio{
-    .info-frases{
-      margin: auto;
-      .info-titulo{
-        font-size: 20px;
-      }
-    }
+  .pageContent .tex_Index .textInitial{
+    font-size: 20px;
   }
+
+
 }
 @include mediaQuery (tablet){
+  .ceo .ceo_foto .blockquote-footer {
+    margin: auto;
+  }
+  .boxServices{
+    justify-content: center;
+  }
 
 
 }
 @include mediaQuery (desktop){
-  .body{
-    background-color: rgb(218, 38, 38);
-  }
-  .blockquote-footer{
-    width: 500px;
+  .opiniones_Carousel .opiones_Tarjetas .blockquote-footer{
+    width: 700px;
     margin: auto;
+    height: 100px !important;
+    }
+  .opiniones_Carousel{
+    height: auto;
   }
 }
