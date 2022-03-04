@@ -1,7 +1,4 @@
-.nosotros_Title{
-  border-bottom: 2px solid map-get($colores, primario);
-  padding: 25px;
-}
+
 .infoUs_Uno{
   margin: auto;
   height: 380px;
@@ -10,16 +7,23 @@
   padding: 15px 15px 0px 15px;
   font-family: 'Roboto', sans-serif;
   height: auto;
+  .nosotros_Title{
+    border-bottom: 2px solid map-get($colores, primario);
+    padding: 25px;
+  }
+  .img_Us{
+    width: 100%;
+  }
 } 
-.imagenUs{
-  margin: auto;
-}
-.nosotros_mv{
-  text-align: left;
-  width: 80%;
-  margin: auto;
-}
 
+.us_mision-vision{
+  background-color: map-get($colores, primario);
+  padding: 30px;
+  color: white;
+  .nosotros_Title2{
+    border-bottom: 2px solid white;   
+  }
+}
 .ceo{
   margin: 40px;
   padding: 25px;
@@ -31,6 +35,10 @@
       height: 200px;
       object-fit: none;
       border-radius: 50%;
+    }
+    .blockquote-footer{
+      margin-top: 10px;
+      width: 200px;
     }
   }
   .ceo_info{

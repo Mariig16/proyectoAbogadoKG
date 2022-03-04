@@ -1,4 +1,4 @@
-.nav_Menu a:hover, .footer a:hover, .formulario_Btn:hover {
+.nav_Menu a:hover, .footer a:hover, .formulario .formulario_Btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
@@ -26,8 +26,8 @@
 .nav_Menu a {
   text-decoration: none;
   color: #520f70;
-  -webkit-transition: all 3s;
-  transition: all 3s;
+  -webkit-transition: all 0,5s;
+  transition: all 0,5s;
 }
 
 .nav_Menu a:hover {
@@ -42,6 +42,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav_Menu .nav-elements .navbar-toggler {
+  padding: 0px;
 }
 
 .nav_Menu .nav-elements .navbar-toggler-icon {
@@ -70,22 +74,33 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .nosotros_mv .img-mv {
-    visibility: hidden;
-    position: absolute;
+  .ceo .ceo_foto .blockquote-footer {
+    margin: auto;
+  }
+  .pageContent .tex_Index .textInitial {
+    font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .nosotros_mv .img-mv {
-    visibility: hidden;
-    position: absolute;
+  .ceo .ceo_foto .blockquote-footer {
+    margin: auto;
+  }
+  .boxServices {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body {
-    background-color: white;
+  .opiniones_Carousel .opiones_Tarjetas .blockquote-footer {
+    width: 700px;
+    margin: auto;
+    height: 100px !important;
+  }
+  .opiniones_Carousel {
+    height: auto;
   }
 }
 
@@ -93,7 +108,7 @@
   font-family: 'Roboto', sans-serif;
   color: white;
   padding: 20px;
-  background-color: black;
+  background-color: #520f70;
 }
 
 .info-inicio .info-frases {
@@ -108,11 +123,6 @@
   font-size: 20px;
 }
 
-.nosotros_Title {
-  border-bottom: 2px solid #520f70;
-  padding: 25px;
-}
-
 .infoUs_Uno {
   margin: auto;
   height: 380px;
@@ -123,14 +133,23 @@
   height: auto;
 }
 
-.imagenUs {
-  margin: auto;
+.infoUs_Uno .nosotros_Title {
+  border-bottom: 2px solid #520f70;
+  padding: 25px;
 }
 
-.nosotros_mv {
-  text-align: left;
-  width: 80%;
-  margin: auto;
+.infoUs_Uno .img_Us {
+  width: 100%;
+}
+
+.us_mision-vision {
+  background-color: #520f70;
+  padding: 30px;
+  color: white;
+}
+
+.us_mision-vision .nosotros_Title2 {
+  border-bottom: 2px solid white;
 }
 
 .ceo {
@@ -149,6 +168,11 @@
   -o-object-fit: none;
      object-fit: none;
   border-radius: 50%;
+}
+
+.ceo .ceo_foto .blockquote-footer {
+  margin-top: 10px;
+  width: 200px;
 }
 
 .ceo .ceo_info {
@@ -206,7 +230,7 @@
 
 .opiniones_Carousel {
   width: 70%;
-  height: 400px;
+  height: 650px;
   padding: 30px;
   margin: auto;
   margin-top: 10px;
@@ -218,8 +242,31 @@
   font-weight: bold;
 }
 
+.opiniones_Carousel .opiones_Tarjetas {
+  margin-bottom: 20px;
+}
+
+.opiniones_Carousel .opiones_Tarjetas .img-cuadro {
+  width: 150px;
+  height: 150px;
+}
+
+.opiniones_Carousel .opiones_Tarjetas .img-cuadro .usuario {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.opiniones_Carousel .opiones_Tarjetas .blockquote-footer {
+  margin-top: 10px;
+  height: 300px;
+}
+
 .opiniones_Carousel .opiniones_Carousel_Tarjetas .opiones_Tarjetas .img-cuadro img {
   border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #520f70;
 }
 
 .carousel-control-next-icon,
@@ -228,34 +275,35 @@
           filter: invert(5);
 }
 
-.usuario {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.opiones_Tarjetas {
-  margin-bottom: 20px;
-}
-
 .formulario {
   width: 400px;
   height: auto;
-  background-color: #36243c;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 20px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 50px;
   border-radius: 4px;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: black;
+  border: 1px solid #520f70;
   -webkit-box-shadow: 7px 13px 37px #000;
           box-shadow: 7px 13px 37px #000;
 }
 
-.formulario_Style {
+.formulario .formulario_Text {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #520f70;
+}
+
+.formulario .formulario_Style {
   width: 100%;
   height: auto;
-  background-color: #24303c;
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -264,28 +312,20 @@
   font-size: 18px;
 }
 
-.formulario_Style:focus {
+.formulario .formulario_Style:focus {
   height: 60px;
-  background-color: #32243cc5;
+  background-color: #520f70;
+  color: #dee8f3;
 }
 
-.formulario_Text {
-  font-size: 24px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-}
-
-.formulario_Btn {
+.formulario .formulario_Btn {
   width: 40%;
   height: 45px;
   margin-top: 20px;
   margin-left: 20px;
   border-radius: 4px;
   border: none;
-  color: white;
+  color: black;
   text-transform: uppercase;
   background: -webkit-gradient(linear, right bottom, left top, from(#6a00a7), to(#dee8f3));
   background: linear-gradient(to left top, #6a00a7, #dee8f3);
@@ -293,27 +333,38 @@
   font-weight: bold;
 }
 
-.formulario_Btn:hover {
+.formulario .formulario_Btn:hover {
   cursor: pointer;
   color: white;
 }
 
-.formulario_Btn:active {
+.formulario .formulario_Btn:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   background: -webkit-gradient(linear, right bottom, left top, from(#dee8f3), to(#6a00a7));
   background: linear-gradient(to left top, #dee8f3, #6a00a7);
 }
 
-.map {
-  margin: auto;
+.elements_Contacto {
+  padding: 10px;
+  background-color: #520f70;
 }
 
-.contacto_Info {
+.elements_Contacto .contacto_Info {
   font-family: 'Roboto', sans-serif;
-  color: #080808;
-  font-size: 30px;
+  color: white;
+  font-size: 20px;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.elements_Contacto .map {
+  margin: auto;
+  width: 90%;
+}
+
+.row {
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
